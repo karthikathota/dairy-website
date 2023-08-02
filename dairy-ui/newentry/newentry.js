@@ -81,7 +81,7 @@ function save() {
     editedData.dairyData = content;
 
     let options = {
-      method: "PATCH",
+      method: "PUT",
       body: JSON.stringify(editedData),
       headers: {
         "Content-Type": "application/json", // Set the appropriate content type

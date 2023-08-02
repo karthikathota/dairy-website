@@ -55,7 +55,9 @@ function createObj(dairy) {
   let entryEl = document.createElement("p");
   entryEl.classList.add("entry-text");
   let entry = dairy.Entry;
-  entryEl.innerHTML = entry;
+
+  var firstTenWords = sanitizeHtml(entry).split(" ").slice(0, 5).join(" ");
+  entryEl.innerHTML = firstTenWords;
   box.appendChild(entryEl);
   main.appendChild(box);
 
@@ -95,4 +97,10 @@ function createObj(dairy) {
   //
   box.appendChild(deleteLink);
   holder.appendChild(main);
+}
+
+function sanitizeHtml(html) {
+  var tempElement = document.createElement("div");
+  tempElement.innerHTML = html;
+  return tempElement.textContent || tempElement.innerText || "";
 }

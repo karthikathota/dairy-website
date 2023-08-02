@@ -24,6 +24,7 @@ body {
   display: flex; /* Use flexbox for the container */
   border: 1px solid #ccc;
   padding: 10px;
+  width: 450px;
   margin-bottom: 10px;
 }
 
