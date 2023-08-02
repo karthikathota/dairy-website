@@ -1,0 +1,32 @@
+.mainhead {
+    color: black;
+    font-family: monospace;
+}
+.mainpara {
+    color: black;
+    font-family: monospace;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://img.freepik.com/premium-photo/white-notebook-with-pencil-pencil-pencil-table_786255-5077.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    width: fit-content;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+

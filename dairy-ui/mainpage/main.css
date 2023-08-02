@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://img.freepik.com/premium-photo/white-notebook-with-pencil-pencil-pencil-table_786255-5077.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#welcomeMsg {
+  font-size: 2.5rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.logout {
+  margin-bottom: 200px;
+}
+
+.box1 {
+  padding: 30px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+  margin: 20px;
+  color: white;
+  width: 200px;
+  border-radius: 12px;
+  height: 200px;
+}
+.logout-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.logout-btn {
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  border-color: #333;
+}
+button {
+  width: fit-content;
+  background-color: white;
+  color: black;
+  border-color: white;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}

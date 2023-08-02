@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 12px;
+  margin: 0;
+  background-image: url("https://img.freepik.com/premium-photo/white-notebook-with-pencil-pencil-pencil-table_786255-5077.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.editor-container {
+  width: 800px; /* Set your desired width here */
+  height: 400px; /* Set your desired height here */
+}
+
+.styling {
+  margin-left: 60px;
+}

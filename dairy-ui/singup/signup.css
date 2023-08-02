@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://img.freepik.com/premium-photo/white-notebook-with-pencil-pencil-pencil-table_786255-5077.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.singup {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}

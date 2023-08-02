@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 12px;
+  margin: 0;
+  background-image: url("https://img.freepik.com/premium-photo/white-notebook-with-pencil-pencil-pencil-table_786255-5077.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.edit-link {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+#showButton {
+  margin-bottom: 20px;
+}
+
+.entry-container {
+  display: flex; /* Use flexbox for the container */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.date-column {
+  flex: 0 0 150px; /* Set a fixed width for the date column */
+}
+
+.entry-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
