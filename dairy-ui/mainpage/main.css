@@ -8,6 +8,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  font-family: "Courier New", Courier, monospace;
 }
 #welcomeMsg {
   font-size: 2.5rem;
