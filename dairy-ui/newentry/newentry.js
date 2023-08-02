@@ -40,11 +40,14 @@ if (id !== null) {
 }
 
 function save() {
+  let entrydate = document.getElementById("txtDate").value;
+  if (entrydate === "") {
+    alert("Please select date");
+  }
   const editor = CKEDITOR.instances.dairyEntry;
   const content = editor.getData();
   // IF NO ID IS PRESENT THEN IT IS A NEW ENTRY
   if (id === null) {
-    let entrydate = document.getElementById("txtDate").value;
     let userId = localStorage.getItem("USERID");
     console.log(userId);
     let data = {};

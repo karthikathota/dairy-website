@@ -27,13 +27,17 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="signup.css" />
-    <script></script>
+    <script>
+      function cancel() {
+        window.location.href = "../login/login.html";
+      }
+    </script>
   </head>
   <body>
     <div class="d-flex flex-column singup">
       <h2>SIGN UP</h2>
       <h4>Please Provide below detials</h4>
-      <label for="Phoneno">PHONE NO***:</label>
+      <label for="Phoneno">PHONE NO*:</label>
       <input
         type="text"
         id="Phoneno"
@@ -42,7 +46,7 @@
         required
       />
       <br />
-      <label for="Firstname">Firstname***:</label>
+      <label for="Firstname">Firstname*:</label>
       <input
         type="text"
         id="Firstname"
@@ -62,7 +66,7 @@
         required
       />
       <br />
-      <label for="username">Username***:</label>
+      <label for="username">Username*:</label>
       <input
         type="text"
         id="username"
@@ -72,7 +76,7 @@
         required
       />
       <br />
-      <label for="eamil">Email***:</label>
+      <label for="eamil">Email*:</label>
       <input
         type="text"
         id="Email"
@@ -82,7 +86,7 @@
         required
       />
       <br />
-      <label for="password">Password***:</label>
+      <label for="password">Password*:</label>
       <input
         type="password"
         id="password"
@@ -100,14 +104,17 @@
         required
       />
       <br />
-      <button
-        type="submit"
-        id="submitBtn"
-        class="btn btn-primary"
-        onclick="openmain()"
-      >
-        Signup
-      </button>
+      <div class="d-flex flex-row">
+        <button class="btn btn-dark" onclick="cancel()">Cancel</button>
+        <button
+          type="submit"
+          id="submitBtn"
+          class="btn btn-dark ml-2"
+          onclick="openmain()"
+        >
+          Signup
+        </button>
+      </div>
     </div>
     <script src="singup.js"></script>
   </body>
