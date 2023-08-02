@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    methods: ["GET", "POST", "PATCH", "DELETE"], // Add PATCH to the allowed methods
+    methods: ["GET", "POST", "PUT", "DELETE"], // Add PATCH to the allowed methods
   })
 );
 //app.use(bodyParser.urlencoded({ extended: false }));
@@ -309,7 +309,7 @@ app.route("/api/v1/dairy").post(CreateDairyEntry); //Used in New Entry
 app.route("/api/v1/dairy/:id").get(GetDairyEntriesbyUserID); //Get all diaries for user
 app.route("/api/v1/dairy/:id/:dairyID").get(GetDairyEntriesbyUserIDandDairyID); //Editing entry by userid and dairyID
 app.route("/api/v1/dairy/:id/:dairydate").get(GetDairyEntriesbyDate);
-app.route("/api/v1/dairy/:id").patch(EditDairybyID);
+app.route("/api/v1/dairy/:id").put(EditDairybyID);
 
 const port = 3305;
 app.listen(port, () => {
