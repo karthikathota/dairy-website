@@ -27,4 +27,4 @@ APIs are implemented by using NODEJS and EXPRESS framework.
 
 MYSQL databse is used to store the data.
 
-[Script](/db-scripts/DB-QUERIES.sql)
+[Script](/db-scripts/DB_QUERIES.sql)
