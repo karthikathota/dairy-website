@@ -29,7 +29,7 @@ MYSQL databse is used to store the data.
 
 [Script](/db-scripts/DB_QUERIES.sql)
 
-##npm
+## npm(node package manager)
 
 npm install mysql --> only mysql package will be installed and node_module folder will be created if it does not exits in the file and all the related modules will be downloaded in that folder.
 Same entry will be added to package.json file
