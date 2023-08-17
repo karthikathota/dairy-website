@@ -28,3 +28,11 @@ APIs are implemented by using NODEJS and EXPRESS framework.
 MYSQL databse is used to store the data.
 
 [Script](/db-scripts/DB_QUERIES.sql)
+
+##npm
+
+npm install mysql --> only mysql package will be installed and node_module folder will be created if it does not exits in the file and all the related modules will be downloaded in that folder.
+Same entry will be added to package.json file
+
+npm install
+All the packages defined in package.json will be installed
