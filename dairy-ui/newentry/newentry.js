@@ -106,3 +106,34 @@ function save() {
       });
   }
 }
+
+function predicted() {
+  var text = CKEDITOR.instances.dairyEntry.getData();
+  console.log(text);
+  // Get the date from the date input
+  var date = document.getElementById("txtDate").value;
+
+  let options = {
+    method: "POST",
+    body: JSON.stringify({ text: text, date: date }), // Include date in the request body
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+  };
+
+  let url = "http://127.0.0.1:5000/predict_sentiment";
+  fetch(url, options)
+    .then(function (response) {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then(function (jsonData) {
+      // Access and display sentiment
+      let sentiment = jsonData.sentiment;
+      document.getElementById("sentimentPlaceholder").innerText =
+        "Sentiment: " + sentiment;
+    });
+}
